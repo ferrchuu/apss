@@ -1,0 +1,36 @@
+.fotosubtitle {
+  font-family: Verdana;
+  font-size: 20px;
+  font-size: calc(5px + 2vmin);
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  color: white;
+  padding: 2rem;
+}
+
+.viejita {
+  padding: 2rem;
+  max-width: 70%;
+  max-height: 70%;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.rightcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.descontainer {
+  padding-top: 2rem;
+}
+
+.special-card {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  color: white;
+  padding: 3rem;
+  font-size: calc(10px + 2vmin);
+}

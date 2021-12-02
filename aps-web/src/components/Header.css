@@ -1,0 +1,12 @@
+.subtitle {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Sofia", sans-serif;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255, 0, 170);
+  font-size: calc(10px + 4vmin);
+}
+
+.amarr {
+  padding: 2rem;
+}

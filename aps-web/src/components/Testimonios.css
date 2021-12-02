@@ -1,0 +1,23 @@
+.img-prop {
+  padding: 1rem;
+}
+
+.img-rescale {
+  height: 600px;
+  min-width: 300px;
+  object-fit: cover;
+}
+
+.rightcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.testimonio-sub {
+  font-family: Verdana;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  text-align: center;
+}
