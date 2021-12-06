@@ -9,7 +9,7 @@ import axios from "axios";
 export default class Boton extends Component {
   handleButtonClick = () => {
     axios.get("/").then((response) => {
-      window.location.href = "http://google.com";
+      window.location.href = "https://wa.me/5493512407364";
     });
   };
 
@@ -20,10 +20,6 @@ export default class Boton extends Component {
           <Row>
             <Col>
               <Button
-                // onClick={(e) => {
-                //   e.preventDefault();
-                //   window.location.href = "http://google.com";
-                // }}
                 onClick={this.handleButtonClick}
                 className="buttom-color"
                 size="lg"
