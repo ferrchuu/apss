@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import "bootstrap";
 import Header from "./components/Header";
@@ -10,15 +10,10 @@ import Escritos from "./components/Escritos";
 import ReactGA from "react-ga";
 
 function App() {
-  // const [data, setData] = React.useState(null);
-
-  // React.useEffect(() => {
-  //   fetch("/")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data.message));
-  // }, []);
-  const TRACKING_ID = "UA-214476434-1"; // YOUR_OWN_TRACKING_ID
-  ReactGA.initialize('UA-214476434-1"', { standardImplementation: true });
+  useEffect(() => {
+    ReactGA.initialize("UA-214476434-1");
+    ReactGA.pageview("/");
+  }, []);
 
   return (
     <div className="App">
