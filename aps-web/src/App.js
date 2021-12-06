@@ -18,21 +18,10 @@ function App() {
   //     .then((data) => setData(data.message));
   // }, []);
   const TRACKING_ID = "UA-214476434-1"; // YOUR_OWN_TRACKING_ID
-  ReactGA.initialize(TRACKING_ID);
+  ReactGA.initialize('UA-214476434-1"', { standardImplementation: true });
 
   return (
     <div className="App">
-      <h1>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-214476434-1"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config',
-          'UA-214476434-1');
-        </script>
-      </h1>
       <Container fluid>
         <Boton></Boton>
         <header className="App-header">
