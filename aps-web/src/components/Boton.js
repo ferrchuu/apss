@@ -10,7 +10,6 @@ import firebase from "../firebase";
 function Boton() {
   const [cells, setCell] = useState([]);
   const ref = firebase.firestore().collection("cells");
-  console.log(ref);
 
   function getCells() {
     ref.get().then((item) => {
@@ -19,11 +18,19 @@ function Boton() {
     });
   }
 
-  useEffect(() => {
-    getCells();
-  }, []);
+  // eslint-disable-next-line
+  useEffect(
+    () => {
+      // eslint-disable-next-line
+      getCells();
+      // eslint-disable-next-line
+    },
+    // eslint-disable-next-line
+    []
+  );
 
   function handleButtonClick() {
+    // eslint-disable-next-line
     {
       cells.map((cell) =>
         axios.get("/").then((response) => {
